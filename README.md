@@ -12,7 +12,13 @@ An interactive sales and inventory analytics application built with Python, Stre
 
 Oracle Data Insights demonstrates how a cloud-connected Python application can query, analyze, and update relational data stored in Oracle Database. The dashboard provides sales performance metrics, order filtering, product analytics, and inventory management.
 
+\## Dashboard Preview
 
+### Revenue Analytics
+![Revenue Analytics Dashboard](screenshots/pic1.png)
+
+### Inventory Management
+![Inventory Management Dashboard](screenshots/pic2.png)
 
 \## Features
 
