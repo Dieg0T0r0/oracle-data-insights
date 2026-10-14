@@ -179,7 +179,7 @@ oracle-data-insights/
 
 ```bash
 
-git clone YOUR\_REPOSITORY\_URL
+git clone https://github.com/Dieg0T0r0/oracle-data-insights.git
 
 cd oracle-data-insights
 
