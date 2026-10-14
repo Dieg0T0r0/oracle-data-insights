@@ -14,10 +14,10 @@ Oracle Data Insights demonstrates how a cloud-connected Python application can q
 
 \## Dashboard Preview
 
-### Revenue Analytics
+\### Revenue Analytics
 ![Revenue Analytics Dashboard](screenshots/Analytics.png)
 
-### Inventory Management
+\### Inventory Management
 ![Inventory Management Dashboard](screenshots/Inventory.png)
 
 \## Features
@@ -38,7 +38,7 @@ Oracle Data Insights demonstrates how a cloud-connected Python application can q
 
 \- \*\*Application logging:\*\* Local log file with error details for troubleshooting.
 
-## Database Design
+\## Database Design
 
 The project uses Oracle Autonomous AI Database with a relational schema consisting of four tables:
 
@@ -47,14 +47,14 @@ The project uses Oracle Autonomous AI Database with a relational schema consisti
 - **ORDERS** — Records customer orders, dates, and order statuses.
 - **ORDER_ITEMS** — Connects orders to products and records quantities and unit prices.
 
-### Relationships
+\### Relationships
 
 - Each customer can have multiple orders.
 - Each order can contain multiple order items.
 - Each product can appear in multiple order items.
 - Primary keys and foreign keys maintain referential integrity across related tables.
 
-### Data Analysis
+\### Data Analysis
 
 SQL queries join orders and order items to calculate revenue, aggregate sales by month, and identify top-selling products. Inventory queries identify products with low stock, while parameterized queries support order-status and date-range filtering.
 
