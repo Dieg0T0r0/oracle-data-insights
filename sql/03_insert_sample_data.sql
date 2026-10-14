@@ -1,0 +1,78 @@
+-- Oracle Data Insights sample data
+-- Run once only against empty project tables.
+
+INSERT ALL
+    INTO customers (customer_id, first_name, last_name, email, registration_date)
+    VALUES (1, 'Alex', 'Morgan', 'alex.morgan@example.com', DATE '2026-01-10')
+    INTO customers (customer_id, first_name, last_name, email, registration_date)
+    VALUES (2, 'Jamie', 'Rivera', 'jamie.rivera@example.com', DATE '2026-02-14')
+    INTO customers (customer_id, first_name, last_name, email, registration_date)
+    VALUES (3, 'Taylor', 'Chen', 'taylor.chen@example.com', DATE '2026-03-05')
+    INTO customers (customer_id, first_name, last_name, email, registration_date)
+    VALUES (4, 'Jordan', 'Patel', 'jordan.patel@example.com', DATE '2026-03-22')
+    INTO customers (customer_id, first_name, last_name, email, registration_date)
+    VALUES (5, 'Casey', 'Brooks', 'casey.brooks@example.com', DATE '2026-04-11')
+    INTO customers (customer_id, first_name, last_name, email, registration_date)
+    VALUES (6, 'Riley', 'Garcia', 'riley.garcia@example.com', DATE '2026-05-02')
+SELECT 1 FROM dual;
+
+INSERT ALL
+    INTO products (product_id, product_name, category, unit_price, stock_quantity)
+    VALUES (1, 'Wireless Mouse', 'Accessories', 24.99, 50)
+    INTO products (product_id, product_name, category, unit_price, stock_quantity)
+    VALUES (2, 'Mechanical Keyboard', 'Accessories', 79.99, 20)
+    INTO products (product_id, product_name, category, unit_price, stock_quantity)
+    VALUES (3, 'USB-C Hub', 'Accessories', 39.99, 15)
+    INTO products (product_id, product_name, category, unit_price, stock_quantity)
+    VALUES (4, '27-inch Monitor', 'Displays', 249.99, 8)
+    INTO products (product_id, product_name, category, unit_price, stock_quantity)
+    VALUES (5, 'Laptop Stand', 'Office', 34.99, 4)
+    INTO products (product_id, product_name, category, unit_price, stock_quantity)
+    VALUES (6, 'Webcam', 'Accessories', 59.99, 12)
+    INTO products (product_id, product_name, category, unit_price, stock_quantity)
+    VALUES (7, 'USB-C Cable', 'Cables', 12.99, 3)
+    INTO products (product_id, product_name, category, unit_price, stock_quantity)
+    VALUES (8, 'Desk Lamp', 'Office', 44.99, 18)
+SELECT 1 FROM dual;
+
+INSERT ALL
+    INTO orders (order_id, customer_id, order_date, status)
+    VALUES (1, 1, DATE '2026-06-01', 'DELIVERED')
+    INTO orders (order_id, customer_id, order_date, status)
+    VALUES (2, 2, DATE '2026-06-05', 'DELIVERED')
+    INTO orders (order_id, customer_id, order_date, status)
+    VALUES (3, 1, DATE '2026-06-12', 'DELIVERED')
+    INTO orders (order_id, customer_id, order_date, status)
+    VALUES (4, 3, DATE '2026-07-02', 'SHIPPED')
+    INTO orders (order_id, customer_id, order_date, status)
+    VALUES (5, 4, DATE '2026-07-09', 'PROCESSING')
+    INTO orders (order_id, customer_id, order_date, status)
+    VALUES (6, 5, DATE '2026-08-15', 'PENDING')
+    INTO orders (order_id, customer_id, order_date, status)
+    VALUES (7, 6, DATE '2026-08-20', 'CANCELLED')
+    INTO orders (order_id, customer_id, order_date, status)
+    VALUES (8, 2, DATE '2026-09-03', 'DELIVERED')
+    INTO orders (order_id, customer_id, order_date, status)
+    VALUES (9, 3, DATE '2026-09-15', 'DELIVERED')
+    INTO orders (order_id, customer_id, order_date, status)
+    VALUES (10, 4, DATE '2026-10-01', 'PROCESSING')
+SELECT 1 FROM dual;
+
+INSERT ALL
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (1, 1, 2, 24.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (1, 2, 1, 79.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (2, 4, 1, 249.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (2, 7, 2, 12.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (3, 3, 1, 39.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (3, 6, 1, 59.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (4, 2, 1, 79.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (4, 5, 1, 34.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (5, 4, 2, 249.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (6, 5, 1, 34.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (7, 1, 1, 24.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (8, 3, 2, 39.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (8, 8, 1, 44.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (9, 6, 2, 59.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (10, 2, 1, 79.99)
+    INTO order_items (order_id, product_id, quantity, unit_price) VALUES (10, 7, 3, 12.99)
+SELECT 1 FROM dual;
