@@ -24,19 +24,19 @@ Oracle Data Insights demonstrates how a cloud-connected Python application can q
 
 
 
-- \*\*Interactive dashboard:\*\* KPI cards for revenue, order counts, customer counts, and low-stock products.
+- **Interactive dashboard:** KPI cards for revenue, order counts, customer counts, and low-stock products.
 
-- \*\*Sales analytics:\*\* Monthly revenue chart and top-selling product table.
+- **Sales analytics:** Monthly revenue chart and top-selling product table.
 
-- \*\*Filtering:\*\* Filter order analytics by order status and date range.
+- **Filtering:** Filter order analytics by order status and date range.
 
-- \*\*Inventory management:\*\* Update product stock quantities directly in Oracle Database.
+- **Inventory management:** Update product stock quantities directly in Oracle Database.
 
-- \*\*Relational data model:\*\* Four related tables with primary keys, foreign keys, and validation constraints.
+- **Relational data model:** Four related tables with primary keys, foreign keys, and validation constraints.
 
-- \*\*Automated tests:\*\* Pytest coverage for date validation, stock validation, and inventory update behavior.
+- **Automated tests:** Pytest coverage for date validation, stock validation, and inventory update behavior.
 
-- \*\*Application logging:\*\* Local log file with error details for troubleshooting.
+- **Application logging:** Local log file with error details for troubleshooting.
 
 ## Database Design
 
