@@ -1,4 +1,4 @@
-\# Oracle Data Insights
+# Oracle Data Insights
 
 
 
@@ -6,39 +6,39 @@ An interactive sales and inventory analytics application built with Python, Stre
 
 
 
-\## Overview
+## Overview
 
 
 
 Oracle Data Insights demonstrates how a cloud-connected Python application can query, analyze, and update relational data stored in Oracle Database. The dashboard provides sales performance metrics, order filtering, product analytics, and inventory management.
 
-\## Dashboard Preview
+## Dashboard Preview
 
-\### Revenue Analytics
+### Revenue Analytics
 ![Revenue Analytics Dashboard](screenshots/Analytics.png)
 
-\### Inventory Management
+### Inventory Management
 ![Inventory Management Dashboard](screenshots/Inventory.png)
 
-\## Features
+## Features
 
 
 
-\- \*\*Interactive dashboard:\*\* KPI cards for revenue, order counts, customer counts, and low-stock products.
+- \*\*Interactive dashboard:\*\* KPI cards for revenue, order counts, customer counts, and low-stock products.
 
-\- \*\*Sales analytics:\*\* Monthly revenue chart and top-selling product table.
+- \*\*Sales analytics:\*\* Monthly revenue chart and top-selling product table.
 
-\- \*\*Filtering:\*\* Filter order analytics by order status and date range.
+- \*\*Filtering:\*\* Filter order analytics by order status and date range.
 
-\- \*\*Inventory management:\*\* Update product stock quantities directly in Oracle Database.
+- \*\*Inventory management:\*\* Update product stock quantities directly in Oracle Database.
 
-\- \*\*Relational data model:\*\* Four related tables with primary keys, foreign keys, and validation constraints.
+- \*\*Relational data model:\*\* Four related tables with primary keys, foreign keys, and validation constraints.
 
-\- \*\*Automated tests:\*\* Pytest coverage for date validation, stock validation, and inventory update behavior.
+- \*\*Automated tests:\*\* Pytest coverage for date validation, stock validation, and inventory update behavior.
 
-\- \*\*Application logging:\*\* Local log file with error details for troubleshooting.
+- \*\*Application logging:\*\* Local log file with error details for troubleshooting.
 
-\## Database Design
+## Database Design
 
 The project uses Oracle Autonomous AI Database with a relational schema consisting of four tables:
 
@@ -47,21 +47,21 @@ The project uses Oracle Autonomous AI Database with a relational schema consisti
 - **ORDERS** — Records customer orders, dates, and order statuses.
 - **ORDER_ITEMS** — Connects orders to products and records quantities and unit prices.
 
-\### Relationships
+### Relationships
 
 - Each customer can have multiple orders.
 - Each order can contain multiple order items.
 - Each product can appear in multiple order items.
 - Primary keys and foreign keys maintain referential integrity across related tables.
 
-\### Data Analysis
+### Data Analysis
 
 SQL queries join orders and order items to calculate revenue, aggregate sales by month, and identify top-selling products. Inventory queries identify products with low stock, while parameterized queries support order-status and date-range filtering.
 
 The database schema uses constraints to help maintain data integrity, and Python handles database connectivity and inventory updates.
 
 
-\## Technology Stack
+## Technology Stack
 
 \- Oracle Autonomous Database
 
@@ -81,7 +81,7 @@ The database schema uses constraints to help maintain data integrity, and Python
 
 
 
-\## Database Design
+## Database Design
 
 
 
@@ -107,7 +107,7 @@ The sample dataset contains 6 customers, 8 products, 10 orders, and 16 order ite
 
 
 
-\## Project Structure
+## Project Structure
 
 
 
@@ -155,11 +155,11 @@ oracle-data-insights/
 
 
 
-\## Setup
+## Setup
 
 
 
-\### Prerequisites
+### Prerequisites
 
 
 
@@ -173,7 +173,7 @@ oracle-data-insights/
 
 
 
-\### 1. Clone the repository
+### 1. Clone the repository
 
 
 
@@ -187,7 +187,7 @@ cd oracle-data-insights
 
 
 
-\### 2. Create and activate a virtual environment
+### 2. Create and activate a virtual environment
 
 
 
@@ -205,7 +205,7 @@ py -m venv .venv
 
 
 
-\### 3. Install dependencies
+### 3. Install dependencies
 
 
 
@@ -217,7 +217,7 @@ python -m pip install streamlit oracledb pandas python-dotenv pytest
 
 
 
-\### 4. Configure Oracle credentials
+### 4. Configure Oracle credentials
 
 
 
@@ -245,7 +245,7 @@ Replace the example values with your own configuration. Never commit your `.env`
 
 
 
-\### 5. Verify the connection
+### 5. Verify the connection
 
 
 
@@ -257,7 +257,7 @@ python test\_connection.py
 
 
 
-\### 6. Create and load the database
+### 6. Create and load the database
 
 
 
@@ -289,7 +289,7 @@ python load\_sample\_data.py
 
 
 
-\### 7. Launch the dashboard
+### 7. Launch the dashboard
 
 
 
@@ -305,7 +305,7 @@ Open the local URL displayed by Streamlit in your browser.
 
 
 
-\## Testing
+## Testing
 
 
 
@@ -325,7 +325,7 @@ The tests cover date-range validation, stock-quantity validation, and inventory 
 
 
 
-\## Security
+## Security
 
 
 
@@ -341,7 +341,7 @@ The tests cover date-range validation, stock-quantity validation, and inventory 
 
 
 
-\## Future Improvements
+## Future Improvements
 
 
 
@@ -355,7 +355,7 @@ The tests cover date-range validation, stock-quantity validation, and inventory 
 
 
 
-\## Author
+## Author
 
 
 
