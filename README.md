@@ -15,10 +15,10 @@ Oracle Data Insights demonstrates how a cloud-connected Python application can q
 \## Dashboard Preview
 
 ### Revenue Analytics
-![Revenue Analytics Dashboard](screenshots/pic1.png)
+![Revenue Analytics Dashboard](screenshots/Analytics.png)
 
 ### Inventory Management
-![Inventory Management Dashboard](screenshots/pic2.png)
+![Inventory Management Dashboard](screenshots/Inventory.png)
 
 \## Features
 
